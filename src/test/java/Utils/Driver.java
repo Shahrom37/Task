@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.Set;
+
 public class Driver {
 
     WebDriver driver;
@@ -32,7 +34,12 @@ public class Driver {
 
         return driver;
     }
-    public void closeDriver(){
-        getDriver().close();
+
+   // public void closeDriver() {
+       // getDriver().close();
+
     }
-}
+
+
+
+

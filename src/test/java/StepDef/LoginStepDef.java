@@ -1,13 +1,14 @@
 package StepDef;
 
-import Locators.HomePage;
 import Locators.LoginPage;
 import Utils.Config;
 import Utils.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
+import org.junit.Assert;
+
 
 public class LoginStepDef {
 
@@ -35,11 +36,11 @@ public class LoginStepDef {
     }
     @Then("I should Login Successfully")
     public void i_should_login_successfully() {
-        Assert.assertEquals(driver.getDriver().getTitle(), Config.getProperty("homePageTitle"));
-        driver.closeDriver();
-
+        Assert.assertEquals(driver.getDriver().getTitle(),Config.getProperty("homePageTitle"));
 
 
     }
 
-}
+
+    }
+

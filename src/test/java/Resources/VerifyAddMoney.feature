@@ -1,6 +1,7 @@
 
   Feature: Verify Add Money Button is Displayed
 
+    @smoke
     Scenario: Verify Add Money Button is Displayed
       Given I login Into The TN Bank
       When I am On the Home Page
